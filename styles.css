@@ -1,0 +1,150 @@
+/* Global Variables */
+:root {
+    --black-blue: rgb(35, 40, 48);
+}
+
+body {
+    background-color: var(--black-blue);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1{
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Navbar */
+.navbar-container {
+    color: rgb(255, 255, 255);
+    background-color: var(--black-blue);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+.navbar{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.navbar-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(255, 117, 117);
+    align-items: flex-start;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-links {
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    align-items: flex-start;
+}
+
+.navbar-item-end{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+/* Title */
+.title-container {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+.title-img {
+    border-radius: 8px;
+    width: 15%;
+    align-self: center;
+}
+
+.title-text {
+    color: rgb(255, 117, 117);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    align-self: center;
+    text-align: center;
+
+}
+
+/* Card Grid*/
+.photo-card-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.photo-card-grid {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.photo-card-item {
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 15px;
+    width: 40%;
+    justify-content: space-between;
+    flex-grow: 2;
+    flex-basis: 2;
+}
+
+
+.card-img {
+    border-radius: 8px;
+    border-color: black;
+    width: 145px;
+    height: 220px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.card-text-container{
+    display: flex;
+    flex-grow: 2;
+    width: 50%;
+    height: 200px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-text{
+    font-family: "Alatsi", sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.card-price-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    gap: 40px;
+}
+
+.card-price-item{
+    display: flex;
+    align-self: flex-end;
+}
