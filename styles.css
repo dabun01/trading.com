@@ -10,7 +10,7 @@ body {
     padding: 10px;
 }
 
-h1{
+h1 {
     font-family: "Ubuntu", sans-serif;
 }
 
@@ -24,7 +24,7 @@ h1{
     margin-bottom: 20px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     width: 70%;
     justify-content: space-between;
@@ -46,10 +46,12 @@ h1{
     align-items: flex-start;
 }
 
-.navbar-item-end{
-    display: flex;
-    justify-content: flex-end;
-    width: 30%;
+.navbar-link-item {
+    transition: color 0.3s ease;
+}
+
+.navbar-link-item:hover {
+    color: rgb(255, 117, 117);
 }
 
 /* Title */
@@ -75,12 +77,11 @@ h1{
     margin-top: 20px;
     align-self: center;
     text-align: center;
-
 }
 
 /* Card Grid*/
-.photo-card-container{
-    display:flex;
+.photo-card-container {
+    display: flex;
     justify-content: center;
     flex-direction: row;
 }
@@ -109,6 +110,15 @@ h1{
     flex-basis: 2;
 }
 
+.photo-card-item {
+    transition: color 0.2s ease;
+}
+
+.photo-card-item:hover {
+    background-color: rgb(255, 117, 117);
+    color: white;
+}
+
 
 .card-img {
     border-radius: 8px;
@@ -119,7 +129,7 @@ h1{
     align-self: center;
 }
 
-.card-text-container{
+.card-text-container {
     display: flex;
     flex-grow: 2;
     width: 50%;
@@ -128,7 +138,7 @@ h1{
     flex-direction: column;
 }
 
-.card-text{
+.card-text {
     font-family: "Alatsi", sans-serif;
     font-size: 1.8em;
     margin-bottom: 10px;
@@ -136,15 +146,29 @@ h1{
     flex-grow: 2;
 }
 
-.card-price-container{
+.player-info {
+    font-family: "Alatsi", sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.card-price-container {
+    font-family: "Alatsi", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-self: center;
     gap: 40px;
+    align-items: baseline;
 }
 
-.card-price-item{
-    display: flex;
-    align-self: flex-end;
+.card-button {
+    font-family: "Alatsi", sans-serif;
+    background-color: var(--black-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
